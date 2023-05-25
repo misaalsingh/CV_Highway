@@ -38,5 +38,5 @@ model = CNN_3D(input_size)
 model.compile(optimizer=tf.keras.optimizers.SGD(learning_rate=.01),
               loss=tf.keras.losses.CategoricalCrossentropy(),
               metrics=tf.keras.metrics.Accuracy())
-model.fit(x_train, y_train, epochs=10, batch_size=100, validation_data=(x_test, y_test))
-model.predict(x_test, y_test)
+history = model.fit(x_train, y_train, epochs=10, batch_size=100, validation_data=(x_test, y_test))
+y_pred  = model.predict(x_test)
