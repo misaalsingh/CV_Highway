@@ -1,10 +1,7 @@
 import os
 import cv2
-from PIL import Image
 import numpy as np
 import pandas as pd
-from IPython.display import display
-import skvideo.io
 
 
 path = '/Users/misaalsingh/Documents/Traffic Video Data/video'
