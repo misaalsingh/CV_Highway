@@ -19,4 +19,6 @@ Step One:
 - Test the accuracy of my CNN
 
 Step Two: 
-- This portion will be done with CV2
+- This portion will be done with CV2 & Yolov3
+- Use cv2 and the pretrained yolo model to identify cars on the highway
+- From this I can use numpy and CV2 to asses the displacement of each object and calculate its speed to see which cars are speeding
