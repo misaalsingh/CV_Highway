@@ -14,11 +14,14 @@ Step Zero:
 - Extract the labels for each of the videos in order to help train any models I use
 
 Step One:
-- Define the archetecture for my 3D-CNN
-- Train/Fit the NN on the images and labels 
-- Test the accuracy of my CNN
+- Use the tensorflow Inceptionv3 model to extract key features from the videos: the output of this will be a (52, 2048) np array (frames, features)
+- Train/Fit the NN on the images and labels
+- Evaluate the accuracy of the model
 
 Step Two: 
-- This portion will be done with CV2 & Yolov3
+- This portion will be done with CV2 & Yolov9
 - Use cv2 and the pretrained yolo model to identify cars on the highway
 - From this I can use numpy and CV2 to asses the displacement of each object and calculate its speed to see which cars are speeding
+
+Step Three:
+- Use Yolov9
